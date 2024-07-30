@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="row p-5">
+    <div class="col-lg-5 m-auto">
+        <h1 class="text-center mb-3">Đăng Nhập Vào TopZone</h1>
+        <form>
+            <!-- Email -->
+            <div class="mb-3">
+                <label class="form-label">Email hoặc số điện thoại</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text bi bi-apple"></span>
+                    <input type="email" required class="form-control" placeholder="Nhập email hoặc số điện thoại của bạn">
+                </div>
+            </div>
+            <!-- Mật khẩu -->
+            <div class="mb-3">
+                <label class="form-label">Mật khẩu</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text bi bi-apple"></span>
+                    <input type="password" required class="form-control"placeholder="Nhập mật khẩu của bạn">
+                </div>
+            </div>
+            <div class="d-grid">
+                <button type="submit" class="btn btn-success">Đăng Nhập</button>
+                <p class="text-center mt-2">
+                    Bạn chưa có tài khoản ? Đăng ký tại <a asp-controller="Register" asp-action="Index" style="text-decoration: none;" >đây<i class="bi bi-apple"></i></a>
+                </p>
+            </div>
+        </form>
+    </div>
+</div>

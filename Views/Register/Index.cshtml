@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row p-5">
+    <div class="col-lg-5 m-auto">
+        <h1 class="text-center mb-3">Đăng Ký</h1>
+        <form>
+            <!-- Email -->
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text bi bi-apple"></span>
+                    <input type="email"required class="form-control" placeholder="Nhập email của bạn">
+                </div>
+            </div>
+
+            <!-- Họ và tên -->
+            <div class="mb-3">
+                <label class="form-label">Họ và tên</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text bi bi-apple"></span>
+                    <input type="text" required class="form-control" placeholder="Nhập họ và tên của bạn">
+                </div>
+            </div>
+
+            <!-- Mật khẩu -->
+            <div class="mb-3">
+                <label class="form-label">Mật khẩu</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text bi bi-apple"></span>
+                    <input type="password" required class="form-control" placeholder="Nhập mật khẩu của bạn">
+                </div>
+            </div>
+
+            <!-- Nhập lại mật khẩu -->
+            <div class="mb-3">
+                <label class="form-label">Xác nhận mật khẩu</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text bi bi-apple"></span>
+                    <input type="password" required class="form-control" placeholder="Nhập lại mật khẩu của bạn">
+                </div>
+            </div>
+
+
+            <div class="d-grid">
+                <button type="submit" class="btn btn-success">Đăng Ký</button>
+            </div>
+
+            <p class="text-center mt-2">
+                Bạn đã có tài khoản ? Đăng nhập tại <a asp-controller="Login" asp-action="Index" style="text-decoration: none;">đây<i class="bi bi-apple"></i></a>
+            </p>
+        </form>
+    </div>
+</div>
